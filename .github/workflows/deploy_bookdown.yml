@@ -44,8 +44,8 @@ jobs:
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:
-          EMAIL: shmirko.konstantin@gmail.com               # must be a verified email
-          GH_TOKEN: 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 # https://github.com/settings/tokens
+          EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
+          GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
           BUILD_DIR: _book/                     # "_site/" by default
     
  
