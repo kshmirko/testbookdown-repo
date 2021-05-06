@@ -45,10 +45,10 @@ jobs:
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:	               # must be a verified email
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} #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 # https://github.com/settings/tokens
-	   with:
-		 email: shmirko.konstantin@gmail.com
-		 build_dir: _book               # optional
-		 jekyll: no                     # optional
-		 commit_message: custom message # optional 
+       with:
+         email: shmirko.konstantin@gmail.com
+         build_dir: _book               # optional
+         jekyll: no                     # optional
+         commit_message: custom message # optional 
          
  
